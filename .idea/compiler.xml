@@ -2,20 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="part-6-1" />
-        <module name="part-1" />
         <module name="test" />
-        <module name="part-8" />
-        <module name="part-7" />
-        <module name="part-5" />
-        <module name="part-4" />
-        <module name="part-3" />
-        <module name="part-2" />
-        <module name="part-6-2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

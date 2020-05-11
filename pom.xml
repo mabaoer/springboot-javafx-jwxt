@@ -23,15 +23,6 @@
   </properties>
 
   <modules>
-    <module>part_1</module>
-    <module>part_2</module>
-    <module>part_3</module>
-    <module>part_4</module>
-    <module>part_5</module>
-    <module>part_6_1</module>
-    <module>part_6_2</module>
-    <module>part_7</module>
-    <module>part_8</module>
     <module>test</module>
   </modules>
 

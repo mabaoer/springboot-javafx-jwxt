@@ -2,6 +2,9 @@ package example.dao;
 
 import example.entity.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import java.util.List;
 
 /**
  * (Course)dao
@@ -11,5 +14,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface CourseRepository extends JpaRepository<Course, Long> {
 
-
+    @Query( value = "select o from Course o where o.teacherId = ?1")
+    List<Course> findAllByTeacherID(Integer teacherId);
 }
