@@ -1,0 +1,4 @@
+javafx:
+    stage:
+        resizable: false
+    title: MyCoolApp

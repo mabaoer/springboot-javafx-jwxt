@@ -1,0 +1,31 @@
+{
+  "name" : "Selectedcourse",
+  "comment" : null,
+  "fullColumn" : [ {
+    "name" : "courseid",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "studentid",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "mark",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "example",
+  "savePath" : "./test/src/main/java/example",
+  "saveModelName" : "test"
+}

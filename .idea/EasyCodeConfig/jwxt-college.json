@@ -1,0 +1,31 @@
+{
+  "name" : "College",
+  "comment" : null,
+  "fullColumn" : [ {
+    "name" : "collegeId",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "collegeName",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  }, {
+    "name" : "neededCredit",
+    "comment" : null,
+    "type" : null,
+    "shortType" : null,
+    "custom" : false,
+    "ext" : { }
+  } ],
+  "pkColumn" : null,
+  "otherColumn" : null,
+  "savePackageName" : "example",
+  "savePath" : "./test/src/main/java/example",
+  "saveModelName" : "test"
+}
