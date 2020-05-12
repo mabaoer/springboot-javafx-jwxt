@@ -11,5 +11,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface UserloginRepository extends JpaRepository<Userlogin, Long> {
 
-
 }
