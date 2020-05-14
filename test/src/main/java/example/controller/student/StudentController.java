@@ -1,32 +1,27 @@
 package example.controller.student;
 
+import com.alibaba.fastjson.JSON;
 import de.felixroske.jfxsupport.FXMLController;
 import example.Main;
 import example.controller.login.LoginController;
 import example.dao.StudentRepository;
 import example.entity.Course;
-import example.entity.Selectedcourse;
 import example.entity.Student;
 import example.service.student.StudentService;
 import example.view.login.LoginView;
 import example.view.student.MessageView;
-import example.view.student.StudentView;
 import javafx.beans.value.ObservableValue;
 import javafx.concurrent.Worker;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Modality;
-import javafx.stage.Screen;
 import javafx.stage.Stage;
 import netscape.javascript.JSObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.alibaba.fastjson.JSON;
+
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 

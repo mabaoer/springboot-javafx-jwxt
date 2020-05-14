@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="0513 袁泽">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/ToolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/controller/ToolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/service/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/service/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/yz/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/yz/Admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/yz/UserOrigin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/yz/UserOrigin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/yz/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/yz/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,6 +55,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1bf0ni9eEhWnZYp2HfQcA9VArwh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -58,22 +67,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../moti-cloud-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/src/main/java/example/entity" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33333334" />
     <property name="settings.editor.selected.configurable" value="com.sjhy.plugin.ui.TemplateSettingPanel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\example\mbw" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\example" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="example" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\view" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\mybatis" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\mybatis\mapper" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\View" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="example.service.impl" />
@@ -82,23 +89,13 @@
       <recent name="example.entity" />
       <recent name="example.View" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\example\mbw" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\example" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\final\test\src\main\java\example\entity" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\view" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\mybatis" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\mybatis\mapper" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\View" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Main (1)">
     <configuration name="Main (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -116,6 +113,19 @@
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="part-5" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="part-6-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -225,34 +235,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="part-6-2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main (1)" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="allServicesViewState">
-      <serviceView>
-        <treeState>
-          <expand />
-          <select />
-        </treeState>
-      </serviceView>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -272,5 +259,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1589452875444">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1589452875444" />
+    <state x="299" y="87" key="Maven.ArtifactSearchDialog" timestamp="1589453473861">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="299" y="87" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1589453473861" />
   </component>
 </project>

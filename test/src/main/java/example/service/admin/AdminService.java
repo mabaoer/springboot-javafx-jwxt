@@ -1,13 +1,11 @@
 package example.service.admin;
 
 import example.dao.*;
-import example.entity.Course;
-import example.entity.Selectedcourse;
-import example.entity.Traningpro;
-import example.entity.Userlogin;
+import example.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -31,6 +29,41 @@ public class AdminService {
     @Autowired
     public SelectedcourseRepository selectedcourseRepository;
 
+
+
+
+
+    public List<BackCourseTable> backCourse()
+    {
+        List<BackCourseTable> backCourses = new LinkedList<>();
+        List<Object[]> temp = selectedcourseRepository.backCourse();
+        for(int i=0;i<temp.size();i++)
+        {
+            Object[] temp2 = temp.get(i);
+            BackCourseTable temp3 = (BackCourseTable) objectToJavaBean(temp2,BackCourseTable.class);
+            backCourses.add(temp3);
+        }
+        return backCourses;
+    }
+
+
+    public static Object objectToJavaBean(Object[] objects,Class<?> type){
+        Object object=null;
+        try {
+            object=type.newInstance();
+            //getDeclaredFields获取声明字段
+            for(int i=0;i<type.getDeclaredFields().length;i++){
+                //此处是设置值，所以"set",可以对应不同做，比如添加就弄add
+                String methodname="set"+type.getDeclaredFields()[i].getName().substring(0,1).toUpperCase()+type.getDeclaredFields()[i].getName().substring(1);
+                Method setmethod=type.getDeclaredMethod(methodname,new Class[]{type.getDeclaredFields()[i].getType()});
+                //利用反射赋值
+                setmethod.invoke(object,objects[i]);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return object;
+    }
 
 
     public List<Course> recommendCourse() {
@@ -103,25 +136,23 @@ public class AdminService {
 
 
     public void passCourse(int id){
-            courseRepository.pass(id);
+        courseRepository.pass(id);
     }
-
-
 
     public void rejectCourse(int id){
         courseRepository.reject(id);
     }
 
-    public List<Course> submitCourse(){
+    public List<Course>  submitCourse(){
 
         List<Course> courses = courseRepository.findAll();
         return courses;
     }
 
 
-    public Map<String, String> allAccount(){
+    public  Map<String,String> allAccount(){
         List<Userlogin> userlogins =userloginRepository.findAll();
-        Map<String, String> temp =new HashMap<>();
+        Map<String,String> temp =new HashMap<>();
         for(int i=0;i<userlogins.size();i++)
         {
             String role = "学生";
@@ -137,6 +168,14 @@ public class AdminService {
         return temp;
     }
 
+
+    public void passSelectedCourse(int id) {
+        selectedcourseRepository.passSC(id);
+    }
+
+    public void rejectSelectedCourse(int id) {
+        selectedcourseRepository.rejectSC(id);
+    }
 
 
 }

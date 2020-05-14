@@ -1,9 +1,7 @@
 package example.controller.admin;
 
 import de.felixroske.jfxsupport.FXMLController;
-import example.entity.Course;
-import example.entity.FXLogin;
-import example.entity.FXSubmitCourse;
+import example.entity.*;
 import example.service.admin.AdminService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -19,31 +17,6 @@ import java.util.Map;
 public class AdminController {
 
     protected final AdminService adminService;
-
-    public AdminController(example.service.admin.AdminService adminService){
-        this.adminService =adminService;
-    }
-
-    @FXML
-    public void checkSingle(){
-
-        String account = checkAccount.getText();
-        System.out.println(account);
-        /**
-         * 使用张宏伟登陆功能（不需要密码）
-         * 直接跳入单独用户账号
-         */
-
-    }
-
-
-    @FXML
-    public void backCourse(){
-        /**
-         * 传参给学生， 进入学生退课界面《让学生获取退课权限
-         */
-    }
-
 
     @FXML
     TableView checkAllTable;
@@ -63,33 +36,6 @@ public class AdminController {
     @FXML
     TextField checkAccount;
 
-
-
-
-    @FXML
-    public void checkAll(){
-        submitTable1.setVisible(false);
-        submitTable2.setVisible(false);
-        submitTable1.setManaged(false);
-        submitTable2.setManaged(false);
-        btnPass.setVisible(false);
-        btnReject.setVisible(false);
-
-        checkAllTable.setVisible(true);
-        checkAllTable.setVisible(true);
-
-        ObservableList<FXLogin> Data = FXCollections.observableArrayList();
-        Map<String, String> accout = adminService.allAccount();
-        for(String key:accout.keySet()){
-            Data.add(new FXLogin(key,accout.get(key)));
-        }
-        account.setCellValueFactory(new PropertyValueFactory<>("Name"));
-        role.setCellValueFactory(new PropertyValueFactory<>("role"));
-        checkAllTable.setItems(Data);
-    }
-
-
-
     @FXML
     TableView submitTable1;
 
@@ -106,7 +52,7 @@ public class AdminController {
     @FXML
     TableColumn p1;
     @FXML
-    TableColumn<FXSubmitCourse, CheckBox> box1;
+    TableColumn <FXSubmitCourse,CheckBox>box1;
 
 
     @FXML
@@ -124,16 +70,132 @@ public class AdminController {
     @FXML
     TableView submitTable2;
     @FXML
-    TableColumn<FXSubmitCourse, CheckBox> box2;
+    TableColumn <FXSubmitCourse,CheckBox>box2;
     @FXML
     Button btnPass;
     @FXML
     Button btnReject;
 
+    public AdminController(AdminService adminService) {
+        this.adminService = adminService;
+    }
+
+
+    @FXML
+    public void checkSingle(){
+
+        String account = checkAccount.getText();
+        System.out.println(account);
+        /**
+         * 使用张宏伟登陆功能（不需要密码）
+         * 直接跳入单独用户账号
+         */
+
+    }
+
+
+    @FXML
+    TableView backCourseTable;
+
+    @FXML
+    TableColumn SID;
+    @FXML
+    TableColumn CID;
+    @FXML
+    TableColumn CN;
+    @FXML
+    TableColumn StuID;
+    @FXML
+    TableColumn SN;
+    @FXML
+    TableColumn box;
+
+
+    @FXML
+    public void backCourse(){
+        submitTable1.setVisible(false);
+        submitTable2.setVisible(false);
+        submitTable1.setManaged(false);
+        submitTable2.setManaged(false);
+        checkAllTable.setVisible(false);
+        checkAllTable.setManaged(false);
+
+
+        btnPass.setVisible(true);
+        btnReject.setVisible(true);
+        backCourseTable.setManaged(true);
+        backCourseTable.setVisible(true);
+
+        List<BackCourseTable>bCourses = adminService.backCourse();
+
+        ObservableList<FXBackCourse>  data1 = FXCollections.observableArrayList();
+        int sid,cid,tid;
+        String cN,sN;
+        for(int i=0;i<bCourses.size();i++)
+        {
+            cid=bCourses.get(i).getCourseID();
+            sid=bCourses.get(i).getStudentID();
+            tid=bCourses.get(i).getSelectedCourseID();
+            cN=bCourses.get(i).getCourseName();
+            sN=bCourses.get(i).getStudentName();
+            data1.add(new FXBackCourse(cid,cN,sid,sN,tid));
+
+        }
+
+
+        SID.setCellValueFactory(new PropertyValueFactory<>("selectedCourseID"));
+        CID.setCellValueFactory(new PropertyValueFactory<>("courseID"));
+        CN.setCellValueFactory(new PropertyValueFactory<>("courseName"));
+        StuID.setCellValueFactory(new PropertyValueFactory<>("studentID"));
+        SN.setCellValueFactory(new PropertyValueFactory<>("studentName"));
+        box.setCellValueFactory(new PropertyValueFactory<>("checkBox"));
+
+        backCourseTable.setItems(data1);
+
+    }
+
+
+
+
+
+
+    @FXML
+    public void checkAll(){
+        backCourseTable.setManaged(false);
+        backCourseTable.setVisible(false);
+        submitTable1.setVisible(false);
+        submitTable2.setVisible(false);
+        submitTable1.setManaged(false);
+        submitTable2.setManaged(false);
+        btnPass.setVisible(false);
+        btnReject.setVisible(false);
+
+        checkAllTable.setVisible(true);
+        checkAllTable.setManaged(true);
+
+        ObservableList<FXLogin>  Data = FXCollections.observableArrayList();
+        Map<String,String> accout = adminService.allAccount();
+        for(String key:accout.keySet()){
+            Data.add(new FXLogin(key,accout.get(key)));
+        }
+        account.setCellValueFactory(new PropertyValueFactory<>("Name"));
+        role.setCellValueFactory(new PropertyValueFactory<>("role"));
+        checkAllTable.setItems(Data);
+    }
+
+
+
+
+
+
+
+
 
     @FXML
     public void submitCourse(){
 
+        backCourseTable.setManaged(false);
+        backCourseTable.setVisible(false);
         checkAllTable.setManaged(false);
         checkAllTable.setVisible(false);
 
@@ -144,9 +206,9 @@ public class AdminController {
         submitTable1.setManaged(true);
         submitTable2.setManaged(true);
 
-        List<Course> courses = adminService.submitCourse();
-        ObservableList<FXSubmitCourse> data1 = FXCollections.observableArrayList();
-        ObservableList<FXSubmitCourse> data2 = FXCollections.observableArrayList();
+        List<Course>courses = adminService.submitCourse();
+        ObservableList<FXSubmitCourse>  data1 = FXCollections.observableArrayList();
+        ObservableList<FXSubmitCourse>  data2 = FXCollections.observableArrayList();
         int cid,tid;
         String cR,cT,cn,p;
         for(int i=0;i<courses.size();i++)
@@ -197,43 +259,80 @@ public class AdminController {
     @FXML
     public void pass()
     {
-        ObservableList<FXSubmitCourse> list=submitTable1.getItems();
-        ObservableList<FXSubmitCourse> list2=submitTable2.getItems();
 
-        List<Integer> data = new LinkedList<>();
-
-        for(int i=0;i<list.size();i++)
+        if(submitTable1.isVisible()== true)
         {
-            if(list.get(i).getCheckBox().isSelected())
+            ObservableList<FXSubmitCourse> list=submitTable1.getItems();
+            ObservableList<FXSubmitCourse> list2=submitTable2.getItems();
+
+            List<Integer> data = new LinkedList<>();
+
+            for(int i=0;i<list.size();i++)
             {
-                data.add(i);
+                if(list.get(i).getCheckBox().isSelected())
+                {
+                    data.add(i);
+                }
             }
+
+            for (int i = data.size()-1; i>=0; i--) {
+                list2.add(list.get(data.get(i)));
+                int id = list.get(data.get(i)).getCourseID();
+                adminService.passCourse(id);
+                list.remove(list.get(data.get(i)));
+            }
+
+            submitTable1.setItems(list);
+            submitTable2.setItems(list2);
+        }
+        else if(backCourseTable.isVisible() == true){
+
+            ObservableList<FXBackCourse> list=backCourseTable.getItems();
+            for(int i=list.size()-1 ;i>=0 ;i--)
+            {
+                if(list.get(i).getCheckBox().isSelected())
+                {
+                    int id = list.get(i).getSelectedCourseID();
+                    adminService.passSelectedCourse(id);
+                    list.remove(list.get(i));
+                }
+            }
+            backCourseTable.setItems(list);
         }
 
-
-        for (int i = data.size()-1; i>=0; i--) {
-            list2.add(list.get(data.get(i)));
-            int id = list.get(data.get(i)).getCourseID();
-            adminService.passCourse(id);
-            list.remove(list.get(data.get(i)));
-        }
-
-        submitTable1.setItems(list);
-        submitTable2.setItems(list2);
     }
 
     public void reject(){
-        ObservableList<FXSubmitCourse> list=submitTable1.getItems();
-        for(int i=list.size()-1;i>=0;i--)
+        if(submitTable1.isVisible() == true)
         {
-            if(list.get(i).getCheckBox().isSelected())
+            ObservableList<FXSubmitCourse> list=submitTable1.getItems();
+            for(int i=list.size()-1;i>=0;i--)
             {
-                int id = list.get(i).getCourseID();
-                adminService.rejectCourse(id);
-                list.remove(i);
+                if(list.get(i).getCheckBox().isSelected())
+                {
+                    int id = list.get(i).getCourseID();
+                    adminService.rejectCourse(id);
+                    list.remove(i);
+                }
             }
+            submitTable1.setItems(list);
         }
-        submitTable1.setItems(list);
+
+        else if(backCourseTable.isVisible() == true){
+
+            ObservableList<FXBackCourse> list=backCourseTable.getItems();
+            for(int i=list.size()-1 ;i>=0 ;i--)
+            {
+                if(list.get(i).getCheckBox().isSelected())
+                {
+                    int id = list.get(i).getSelectedCourseID();
+                    adminService.rejectSelectedCourse(id);
+                    list.remove(list.get(i));
+                }
+            }
+            backCourseTable.setItems(list);
+        }
+
     }
 
 
