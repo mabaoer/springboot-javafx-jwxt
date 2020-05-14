@@ -1,0 +1,27 @@
+.root {
+    -fx-opacity: 0.3;
+}
+.label {
+    -fx-font-size: 40px;
+    -fx-font-style: oblique;
+    -fx-text-fill: white;
+}
+.button {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 100px;
+    -fx-opacity: 0.4;
+    -fx-border-radius: 3px;
+    -fx-border-width: 0;
+    -fx-background-color:linear-gradient(to bottom,deepskyblue,dodgerblue);
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+}
+.button:hover {
+    -fx-opacity: 0.8;
+    -fx-border-radius: 3px;
+    -fx-border-width: 0;
+    -fx-background-color: cornflowerblue;
+}
+.text-field {
+
+}

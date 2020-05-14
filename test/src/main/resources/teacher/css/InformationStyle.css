@@ -1,0 +1,25 @@
+
+.table-view {
+    -fx-opacity: 0.5;
+    -fx-font-size: 20px;
+}
+#teacherName {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#degree {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#college {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#grade {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}

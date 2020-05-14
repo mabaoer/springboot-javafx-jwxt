@@ -1,0 +1,75 @@
+
+.table-view {
+    -fx-opacity: 0.5;
+    -fx-font-size: 20px;
+}
+#teacherName {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#degree {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+#college {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+.label{
+    -fx-opacity: 0.5;
+    -fx-font-size: 35px;
+    -fx-font-style: oblique;
+    -fx-text-fill: white;
+}
+.glyph-icon {
+    -fx-font-size: 15px;
+}
+#grade {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+.button:hover {
+    -fx-opacity: 0.8;
+    -fx-border-radius: 3px;
+    -fx-border-width: 0;
+    -fx-background-color: cornflowerblue;
+}
+.button {
+     -fx-pref-width: 300px;
+     -fx-pref-height: 100px;
+     -fx-opacity: 0.4;
+     -fx-border-radius: 3px;
+     -fx-border-width: 0;
+     -fx-background-color:linear-gradient(to bottom,deepskyblue,dodgerblue);
+     -fx-text-fill: white;
+     -fx-font-size: 40px;
+ }
+#four {
+    -fx-opacity: 0.5;
+    -fx-font-size: 35px;
+    -fx-font-style: oblique;
+    -fx-text-fill: black;
+}
+#area {
+    -fx-opacity: 0.5;
+    -fx-font-size: 35px;
+    -fx-font-style: oblique;
+    -fx-text-fill: lightskyblue;
+}
+
+#six {
+    -fx-opacity: 0.5;
+    -fx-font-size: 35px;
+    -fx-font-style: oblique;
+    -fx-text-fill: black;
+}
+#five {
+     -fx-opacity: 0.5;
+     -fx-font-size: 35px;
+     -fx-font-style: oblique;
+     -fx-text-fill: black;
+ }

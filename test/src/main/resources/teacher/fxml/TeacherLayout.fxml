@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+         prefHeight="400.0" prefWidth="602.0" tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="example.controller.teacher.TeacherController">
+    <tabs>
+        <Tab text="Information">
+            <content>
+                <fx:include source="InformationLayout.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="OpenCourse">
+            <content>
+                <fx:include source="CourseLayout.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="RecordGrade">
+            <content>
+                <fx:include source="GradeLayout.fxml"/>
+            </content>
+        </Tab>
+        <Tab text="SetOpinion">
+            <content>
+                <fx:include source="SetOpinionLayout.fxml"/>
+            </content>
+        </Tab>
+        <Tab fx:id="exit" text="Exit">
+            <content>
+                <fx:include source="ExitLayout.fxml"/>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

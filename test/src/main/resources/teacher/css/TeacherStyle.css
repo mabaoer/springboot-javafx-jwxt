@@ -1,0 +1,35 @@
+/* 修改TabPane的Pane区域背景颜色 */
+/* 修改Tab的背景颜色 */
+.tab {
+    -fx-pref-height: 70px;
+    -fx-background-color: #333333;
+    -fx-opacity: 0.5;
+    -fx-pref-width: 380px;
+    -fx-alignment: center;
+}
+/* 修改顶栏的背景颜色 */
+.tab-pane>*.tab-header-area>*.tab-header-background
+{
+    -fx-opacity: 0;
+}
+/* 修改Tab中文本的颜色 */
+.tab-label {
+    -fx-pref-width: 317px;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+/* 子代选择器，Tab选中的时候选择其子元素tab-label */
+.tab:selected .tab-label {
+    -fx-text-fill: black;
+}
+/* tab选中时设置背景颜色 */
+.tab:selected {
+    -fx-background-color: snow;
+}
+.tab:hover {
+    -fx-background-color: fuchsia;
+}
+#pane {
+    -fx-opacity: 0.3;
+}

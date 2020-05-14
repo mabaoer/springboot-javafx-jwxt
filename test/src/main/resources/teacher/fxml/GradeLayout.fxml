@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="/teacher/css/GradeStyle.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.controller.teacher.GradeController">
+    <children>
+        <ComboBox fx:id="combo_box" onAction="#Changed" prefHeight="20" prefWidth="200" AnchorPane.rightAnchor="100" AnchorPane.topAnchor="40" />
+        <AnchorPane opacity="0.5" AnchorPane.bottomAnchor="80" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100">
+            <children>
+                <TableView fx:id="table" editable="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="studentId" onEditCommit="#EditCommit" prefWidth="317.0" text="studentId" />
+                        <TableColumn fx:id="studentName" onEditCommit="#EditCommit" prefWidth="317.0" text="studentName" />
+                        <TableColumn fx:id="overallGrades" onEditCommit="#EditCommit" prefWidth="317.0" text="Overall grades" />
+                        <TableColumn fx:id="usualGrades" onEditCommit="#EditCommit" prefWidth="317.0" text="Usual grades" />
+                        <TableColumn fx:id="midtermGrades" onEditCommit="#EditCommit" prefWidth="317.0" text="Midterm grades" />
+                        <TableColumn fx:id="finalGrades" onEditCommit="#EditCommit" prefWidth="317.0" text="Final grades" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <ButtonBar prefHeight="80" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="100.0">
+            <buttons>
+                <Button fx:id="cancel" mnemonicParsing="false" onAction="#Cancel" prefHeight="80.0" text="Cancel" />
+                <Button fx:id="commit" mnemonicParsing="false" onAction="#Commit" prefHeight="80.0" text="Commit" />
+            </buttons>
+        </ButtonBar>
+      <Label AnchorPane.topAnchor="40" AnchorPane.leftAnchor="100" text="Double Click to Edit And Enter to Confirm" />
+    </children>
+</AnchorPane>
