@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.controller.student.MessageController">
+    <Label fx:id="label" layoutX="30.0" prefHeight="105.0" prefWidth="225.0" text="This is some ToolWindow" />
+</AnchorPane>

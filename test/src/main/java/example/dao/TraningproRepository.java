@@ -2,6 +2,10 @@ package example.dao;
 
 import example.entity.Traningpro;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.util.List;
 
 /**
  * (Traningpro)dao
@@ -11,5 +15,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface TraningproRepository extends JpaRepository<Traningpro, Long> {
 
-
+    @Query(value ="select * from  traningpro a where a.college_id =:id",nativeQuery=true)
+    List<Traningpro> findTp(@Param("id")int id);
 }

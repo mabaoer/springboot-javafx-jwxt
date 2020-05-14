@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/ionicons.css">
+</head>
+<body>
+
+<div id="app">
+    <div class="main-wrapper">
+        <div class="navbar-bg"></div>
+        <nav class="navbar navbar-expand-lg main-navbar" id="top">
+            <form class="form-inline mr-auto">
+                <ul class="navbar-nav mr-3">
+                    <li>
+                        <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg">
+                            <i class="ion ion-navicon-round"></i>
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </nav>
+        <div class="main-sidebar" id="sidebar">
+            <aside id="sidebar-wrapper">
+                <div class="sidebar-brand">
+                    <a href="index">网盘测试</a>
+                </div>
+                <div class="sidebar-user">
+                    <div class="sidebar-user-picture">
+                        <a><img style="width: 50px;height: 50px" alt="image" src="../image/100.jpg"></a>
+                    </div>
+                    <div class="sidebar-user-details">
+                        <div class="user-name">username</div>
+                        <div class="user-role">
+                            普通用户
+                        </div>
+                    </div>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="menu-header">功能列表</li>
+                    <li>
+                        <a href="#" class="has-dropdown"><i class="ion ion-person-stalker"></i><span>个人管理</span></a>
+                        <ul class="menu-dropdown" >
+                            <li >
+                                <a href="student-info.html"><i class="ion ion-document-text"></i> 个人资料
+                                    <!--<div th:text="${statistics.doc}" class="badge badge-primary">10</div>-->
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-dropdown"><i class="ion ion-person-stalker"></i><span>选课管理</span></a>
+                        <ul class="menu-dropdown" style="display: block">
+                            <li class="active">
+                                <a href="student-selectedcourse.html"><i class="ion ion-document-text"></i> 本学期课表</a>
+                            </li>
+                            <li >
+                                <a href="student-selectcourse.html"><i class="ion ion-document-text"></i> 本学期选课</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="help.html"><i class="ion ion-help-buoy"></i> 帮助</a>
+                    </li>
+                    <div class="p-3 mt-4 mb-4">
+                        <a href="help.html" href="#"
+                           class="btn btn-danger btn-shadow btn-round has-icon has-icon-nofloat btn-block">
+                            <i class="ion ion-log-out"></i>
+                            <div onclick="loginout()">退出登录</div>
+                        </a>
+                    </div>
+                </ul>
+            </aside>
+        </div>
+        <div class="main-content">
+            <section class="section">
+                <h1 class="section-header">
+                    <div><i class="ion ion-help-buoy"></i> 使用帮助</div>
+                </h1>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 table-responsive">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>已选课程</h3>
+                            </div>
+                            <div class="card-body">
+                                <table class="table tab-bordered text-nowrap">
+                                    <tbody id="courselist">
+                                    <tr class="empty-space">
+                                        <th></th>
+                                        <th>课程id</th>
+                                        <th>总人数</th>
+                                        <th>剩余课余量</th>
+                                        <th>开课时间</th>
+                                        <th>开课地点</th>
+                                        <th>学时</th>
+                                        <th>课程类型</th>
+                                        <th>学分</th>
+                                        <th>最迟选课、退课时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="main-footer" id="footer">
+            <div class="footer-left">
+                Copyright &copy; 2020
+                <div class="bullet"></div>
+                选课不会卡的教务系统
+                <div class="bullet"></div>
+                帅的雅痞小组
+            </div>
+            <div class="footer-right"></div>
+        </footer>
+
+    </div>
+</div>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.nicescroll.min.js"></script>
+<script src="../js/scroll-up-bar.min.js"></script>
+<script src="../js/scripts.js"></script>
+<script>
+    var apps = 'test';
+    function formatDate(now) { var year=now.getFullYear();  //取得4位数的年份
+         var month=now.getMonth()+1;  //取得日期中的月份，其中0表示1月，11表示12月
+         var date=now.getDate();      //返回日期月份中的天数（1到31）
+         var hour=now.getHours();     //返回日期中的小时数（0到23）
+         var minute=now.getMinutes(); //返回日期中的分钟数（0到59）
+         var second=now.getSeconds(); //返回日期中的秒数（0到59）
+         return year+"-"+month+"-"+date+" "+hour+":"+minute+":"+second; }
+
+    function studentinfo() {
+        var courselist=[]
+        courselist = JSON.parse(apps.selectedcourseList())
+        var html= $('#courselist').html();
+
+        for (var i=0;i<courselist.length;i++){
+            var d=new Date(courselist[i]["endTime"]);
+            html+="                                    <tr  class=\"files-items files flag\">\n" +
+                "                                        <td><span style=\"display: none\"></span>\n" +
+                "                                            <i style=\"font-size: 24px;color: #3498db\"\n" +
+                "                                               class=\"icon ion-person-stalker\"></i>\n" +
+                "                                        </td>\n";
+            html+="<td>"+courselist[i]["courseName"]+"</td>";
+            html+="<td>"+courselist[i]["number"]+"</td>";
+            html+="<td>"+courselist[i]["restNumber"]+"</td>";
+            html+="<td>"+courselist[i]["courseTime"]+"</td>";
+            html+="<td>"+courselist[i]["classRoom"]+"</td>";
+            html+="<td>"+courselist[i]["courseWeek"]+"</td>";
+            html+="<td>"+courselist[i]["courseType"]+"</td>";
+            html+="<td>"+courselist[i]["credit"]+"</td>";
+            html+="<td>"+formatDate(d)+"</td>";
+            html+="<td><button type=\"button\" class=\"btn btn-primary btn-lg\" onclick=\"deletecourse(" +
+                courselist[i].courseId +
+                ")\">退课</button></td>"
+            html+="                                    </tr>\n";
+        }
+        $('#courselist').html(html)
+    }
+    function deletecourse(id) {
+        apps.deleteCourse(id);
+        location.reload();
+    }
+    function loginout() {
+        apps.loginout();
+    }
+</script>
+</body>
+</html>
