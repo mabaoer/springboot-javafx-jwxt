@@ -1,107 +1,133 @@
 package example.controller.login;
 
 import example.Main;
+import example.dao.StudentRepository;
+import example.dao.TeacherRepository;
+import example.dao.UserloginRepository;
 import example.entity.Student;
 import example.entity.Teacher;
 import example.entity.Userlogin;
-import example.service.login.LoginService;
-import example.view.teacher.TeacherView;
-import javafx.event.ActionEvent;
+import example.service.login.Loginservice;
+import example.view.admin.AdminView;
+import example.view.student.StudentView;
+import javafx.application.Application;
+import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.*;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
-import de.felixroske.jfxsupport.FXMLController;
+import javafx.scene.text.Text;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import de.felixroske.jfxsupport.FXMLController;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.context.ApplicationContext;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
-import java.net.URL;
-import java.util.List;
-import java.util.ResourceBundle;
-
 @FXMLController
-public class LoginController implements Initializable {
-    public List<Userlogin> listUser;
+public class LoginController  {
+    public Userlogin user;
+    static int a;
     public static Student student;
     public static Teacher teacher;
-    public static Userlogin user;
-    @FXML
-    private Pane pane;
+@FXML
+private Pane pane;
+    @Autowired
+    UserloginRepository userdao;
+    @Autowired
+    StudentRepository studentdao;
+    @Autowired
+    TeacherRepository teacherdao;
 
     @FXML
-    public TextField userField;
+    public TextField userfield;
     @FXML
-    public TextField passwordField;
+    public TextField passwordfield;
 
-    final
-    protected LoginService loginService;
+
+int NUM =11;
+
+
 
     @Autowired
-    public LoginController(LoginService loginService) {
-        this.loginService = loginService;
-    }
+    protected Loginservice loginservice;
 
-    public void LogIn(ActionEvent event) throws IOException {
-        Button button = (Button)event.getSource();
-        Stage stage = (Stage)button.getScene().getWindow();
-        int flag = -1;
-        flag = isRight();
-        if (flag == -1) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION, "your account or password is wrong!", new ButtonType("取消", ButtonBar.ButtonData.NO),
-                    new ButtonType("确定", ButtonBar.ButtonData.YES));
-            alert.setTitle("确认");
-            alert.showAndWait();
+    public void showToolWindow(Event event) throws IOException {
+        int flag=-1;
+                flag=isright();
+        if (flag==-1) {
+            System.out.println("出错了了了了来了了了了来了了了");
 
-        } else if (flag == 2) {
-            stage.close();
-            student = loginService.findByStudentId(Integer.parseInt(user.getUserName()));
-            Main.showView(TeacherView.class);
-        } else if (flag == 1) {
-            stage.close();
-            teacher = loginService.findByTeacherId(Integer.parseInt(user.getUserName()));
-            Main.showView(TeacherView.class);
-        } else if (flag == 0) {
-            stage.close();
-            Main.showView(TeacherView.class);
+        }
+        else if (flag==2) {
+            student=studentdao.findByStudentId(Integer.parseInt(user.getUserName()));
+            System.out.println("学生来了了了了了来了了了了来了了了");
+            Main.getStage().close();
+            Main.showView(StudentView.class, Modality.NONE);
+        }
+        else if (flag==1) {
+            teacher=teacherdao.findByTeacherId(Integer.parseInt(user.getUserName()));
+            System.out.println("老师来了了了了来了了了了来了了了");
+            Main.getStage().close();
+           // Main.showView(TeacherView.class, Modality.NONE);
+        }
+        else if (flag==0)
+        {
+            System.out.println("管理员来了了了了来了了了了来了了了");
+            Main.getStage().close();
+            Main.showView(AdminView.class, Modality.NONE);
         }
     }
 
-    public int isRight() {
 
-        for (int i = 0; i < listUser.size(); i++) {
-            user = listUser.get(i);
+    public int  isright()
+    {
 
-            if (userField.getText().equals(user.getUserName())) {
-                if (passwordField.getText().equals(user.getPassword())) {
-                    System.out.println(user.getPassword());
+        for (int i=1;i<=NUM;i++) {
+            user=userdao.findByUserloginId(i);
+
+            System.out.println(user.getUserName());
+            System.out.println("111111111");
+            System.out.println(userfield.getText());
+            if (userfield.getText().equals(user.getUserName())) {
+                if (passwordfield.getText().equals(user.getPassword())) {
+                    System.out.println("kdsajkdjasjkdjklsaldasdkas");
                     return user.getRole();
                 }
-
             }
         }
         return -1;
 
     }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        listUser = loginService.findAllUsers();
-        Image image = new Image(String.valueOf(getClass().getResource("/login/1.jpg")));
-        BackgroundSize backgroundSize = new BackgroundSize(620, 620, false, false, false, false);
-        BackgroundImage backgroundImage = new BackgroundImage(image, null, null, null, backgroundSize);
-        Background background = new Background(backgroundImage);
-        if (image == null) {
+    public void initialize(){
+
+        Image image=new Image(String.valueOf(getClass().getResource("/Login/1.jpg")));
+        BackgroundSize backgroundSize=new BackgroundSize(620,620,false,false,false,false);
+        BackgroundImage backgroundImage=new BackgroundImage(image,null,null,null,backgroundSize);
+        Background background=new Background(backgroundImage);
+        if(image==null)
+        {
             System.exit(1);
-        } else if (backgroundImage == null) {
+        }
+        else if(backgroundImage==null)
+        {
             System.exit(2);
-        } else if (background == null) {
+        }
+        else if (background==null)
+        {
             System.exit(3);
-        } else if (pane == null) {
+        }
+        else if(pane==null)
+        {
             System.exit(4);
         }
+
         pane.setBackground(background);
+
     }
 }

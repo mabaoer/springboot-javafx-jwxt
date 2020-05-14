@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField ?>
+
+<Pane
+
+        id="pane" fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="example.controller.login.LoginController">
+
+
+
+      <GridPane  alignment="center" hgap="20" vgap="10" xmlns:fx="http://javafx.com/fxml">
+         <padding><Insets bottom="10" left="100" right="25" top="100" /></padding>
+         <Text text="Welcome" id="welcome" fx:id="welcome" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0" />
+
+         <Label text="UserName:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+         <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"
+         fx:id="userfield"
+         />
+
+         <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+         <PasswordField fx:id="passwordfield" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <HBox alignment="bottom_right" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
+            <Button onAction="#showToolWindow" text="Sign In" />
+         </HBox>
+
+         <Text fx:id="actiontarget" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+         <stylesheets>
+            <URL value="@LoginCss.css" />
+         </stylesheets>
+
+      </GridPane>
+
+</Pane>
