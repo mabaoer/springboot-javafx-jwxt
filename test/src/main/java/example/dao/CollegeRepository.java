@@ -2,6 +2,7 @@ package example.dao;
 
 import example.entity.College;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 /**
  * (College)dao

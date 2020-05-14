@@ -2,6 +2,7 @@ package example.service.student;
 
 import example.dao.CourseRepository;
 import example.dao.SelectedcourseRepository;
+import example.dao.StudentRepository;
 import example.entity.Course;
 import example.entity.Selectedcourse;
 import example.entity.Student;
@@ -22,6 +23,13 @@ public class StudentService {
     CourseRepository courseRepository;
     @Autowired
     SelectedcourseRepository selectedcourseRepository;
+
+    final
+    private StudentRepository studentDao;
+    @Autowired
+    public StudentService(StudentRepository studentDao) {
+        this.studentDao = studentDao;
+    }
 
     public List<Course> findAllCanBeSelectedCoursesByStudent(Student student) {
         List<Course> courses = new ArrayList<>();
@@ -82,5 +90,8 @@ public class StudentService {
 
     public Integer findSelectedcourseByStudentidAndcourseid(Integer studentId, Integer courseid) {
         return selectedcourseRepository.findByStudentIdAndCourseId(studentId,courseid).getSelectedcourseId();
+    }
+    public String findStudentNameByStudentId(Integer studentId){
+        return studentDao.findStudentNameByStudentId(studentId);
     }
 }

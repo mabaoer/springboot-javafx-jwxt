@@ -3,7 +3,7 @@ package example.controller.teacher;
 import de.felixroske.jfxsupport.FXMLController;
 import example.entity.Selectedcourse;
 import example.service.teacher.SelectedcourseService;
-import example.service.teacher.StudentService;
+import example.service.student.StudentService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

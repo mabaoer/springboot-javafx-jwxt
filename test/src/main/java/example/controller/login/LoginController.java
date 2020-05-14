@@ -10,6 +10,7 @@ import example.entity.Userlogin;
 import example.service.login.Loginservice;
 import example.view.admin.AdminView;
 import example.view.student.StudentView;
+import example.view.teacher.TeacherView;
 import javafx.application.Application;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -67,19 +68,19 @@ int NUM =11;
             student=studentdao.findByStudentId(Integer.parseInt(user.getUserName()));
             System.out.println("学生来了了了了了来了了了了来了了了");
             Main.getStage().close();
-            Main.showView(StudentView.class, Modality.NONE);
+            Main.showView(StudentView.class);
         }
         else if (flag==1) {
             teacher=teacherdao.findByTeacherId(Integer.parseInt(user.getUserName()));
             System.out.println("老师来了了了了来了了了了来了了了");
             Main.getStage().close();
-           // Main.showView(TeacherView.class, Modality.NONE);
+            Main.showView(TeacherView.class);
         }
         else if (flag==0)
         {
             System.out.println("管理员来了了了了来了了了了来了了了");
             Main.getStage().close();
-            Main.showView(AdminView.class, Modality.NONE);
+            Main.showView(AdminView.class);
         }
     }
 
