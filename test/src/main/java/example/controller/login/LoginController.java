@@ -7,7 +7,8 @@ import example.dao.UserloginRepository;
 import example.entity.Student;
 import example.entity.Teacher;
 import example.entity.Userlogin;
-import example.service.login.Loginservice;
+import example.service.login.LoginService;
+
 import example.view.admin.AdminView;
 import example.view.student.StudentView;
 import example.view.teacher.TeacherView;
@@ -55,7 +56,7 @@ int NUM =11;
 
 
     @Autowired
-    protected Loginservice loginservice;
+    protected LoginService loginservice;
 
     public void showToolWindow(Event event) throws IOException {
         int flag=-1;

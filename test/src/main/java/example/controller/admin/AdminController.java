@@ -1,13 +1,22 @@
 package example.controller.admin;
 
 import de.felixroske.jfxsupport.FXMLController;
+import example.Main;
+import example.controller.login.LoginController;
+import example.dao.StudentRepository;
+import example.dao.TeacherRepository;
 import example.entity.*;
 import example.service.admin.AdminService;
+import example.view.student.MessageView;
+import example.view.student.StudentView;
+import example.view.teacher.TeacherView;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Modality;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -80,16 +89,25 @@ public class AdminController {
         this.adminService = adminService;
     }
 
+    @Autowired
+    StudentRepository studentdao;
+    @Autowired
+    TeacherRepository teacherdao;
 
     @FXML
     public void checkSingle(){
 
         String account = checkAccount.getText();
-        System.out.println(account);
-        /**
-         * 使用张宏伟登陆功能（不需要密码）
-         * 直接跳入单独用户账号
-         */
+        if(account.length()==4)
+        {
+            LoginController.teacher =teacherdao.findByTeacherId(Integer.parseInt(account));
+            Main.showView(TeacherView.class, Modality.NONE);
+        }
+        else if(account.length()==5)
+        {
+            LoginController.student = studentdao.findByStudentId(Integer.parseInt(account));
+            Main.showView(StudentView.class, Modality.NONE);
+        }
 
     }
 

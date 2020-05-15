@@ -6,6 +6,19 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/part_1/pom.xml" />
+        <option value="$PROJECT_DIR$/part_2/pom.xml" />
+        <option value="$PROJECT_DIR$/part_3/pom.xml" />
+        <option value="$PROJECT_DIR$/part_4/pom.xml" />
+        <option value="$PROJECT_DIR$/part_5/pom.xml" />
+        <option value="$PROJECT_DIR$/part_6_1/pom.xml" />
+        <option value="$PROJECT_DIR$/part_6_2/pom.xml" />
+        <option value="$PROJECT_DIR$/part_7/pom.xml" />
+        <option value="$PROJECT_DIR$/part_8/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
