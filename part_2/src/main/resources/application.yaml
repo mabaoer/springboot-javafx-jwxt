@@ -1,6 +1,0 @@
-spring:
-    jmx: 
-        enabled: false
-
-javafx:
-    title: MyCoolApp (Pt 2)
