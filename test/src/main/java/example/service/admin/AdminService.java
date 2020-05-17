@@ -66,7 +66,7 @@ public class AdminService {
     }
 
 
-    public List<Course> recommendCourse() {
+    public List<Course> recommendCourse(Student student) {
         /**
          * 学生界面设计前端
          * 所有数据均以测试成功
@@ -77,8 +77,8 @@ public class AdminService {
         // test.getCollegeId();
         // test.getStudentId();
 
-        int collegeId = 1;        //学生所在专业测试用例
-        int studentId = 10002;
+        int collegeId = student.getCollegeId();        //学生所在专业测试用例
+        int studentId = student.getStudentId();
 
         List<Course> courses = courseRepository.findAll();
         Map<Integer, Course> map = new HashMap<>();   //哈希查询，减少循环

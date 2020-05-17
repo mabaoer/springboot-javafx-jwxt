@@ -7,6 +7,7 @@ import example.controller.login.LoginController;
 import example.dao.StudentRepository;
 import example.entity.Course;
 import example.entity.Student;
+import example.service.admin.AdminService;
 import example.service.student.StudentService;
 import example.view.login.LoginView;
 import example.view.student.MessageView;
@@ -42,6 +43,8 @@ public class StudentController implements Initializable {
     MessageController messageController;
     @Autowired
     LoginController loginController;
+    @Autowired
+    AdminService adminService;
     static Student student=null;
 
     @Override
@@ -88,6 +91,14 @@ public class StudentController implements Initializable {
             System.out.println(json);
             return json;
         }
+
+        public String courseList1(){
+            List<Course> courses=adminService.recommendCourse(student);
+            String json=JSON.toJSONString(courses);
+            System.out.println(json);
+            return json;
+        }
+
         public String selectedcourseList(){
             List<Course> courses=studentService.findAllSelectedcourseByStudent(student);
             String json=JSON.toJSONString(courses);

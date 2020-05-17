@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a509d8f2-eba0-4067-9533-ccf3d31cb9ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a509d8f2-eba0-4067-9533-ccf3d31cb9ff.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/ToolController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/controller/student/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/service/admin/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/service/admin/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/student/html/student-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/student/html/student-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/student/html/student-selectcourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/student/html/student-selectcourse.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/student/html/student-selectedcourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/student/html/student-selectedcourse.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +42,13 @@
         <item name="MySQL - @mabowen.online" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="jwxt: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @mabowen.online" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jwxt: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="course: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -252,6 +266,16 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -273,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589698724252</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="delete other  modules">
+      <created>1589698941466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589698941466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
