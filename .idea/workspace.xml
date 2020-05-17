@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a509d8f2-eba0-4067-9533-ccf3d31cb9ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a509d8f2-eba0-4067-9533-ccf3d31cb9ff.xml" afterDir="false" />
+    <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="增加 推荐界面 修复 方框字体">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/ToolController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/controller/student/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/service/admin/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/service/admin/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/resources/student/html/student-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/student/html/student-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/resources/student/html/student-selectcourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/student/html/student-selectcourse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/resources/student/html/student-selectedcourse.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/student/html/student-selectedcourse.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589698941466</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加 推荐界面 修复 方框字体">
+      <created>1589701387623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589701387623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +330,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete other  modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete other  modules" />
+    <MESSAGE value="增加 推荐界面 修复 方框字体" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加 推荐界面 修复 方框字体" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1589452875444">
