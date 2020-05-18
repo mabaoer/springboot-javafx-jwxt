@@ -5,7 +5,6 @@ import example.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -170,7 +169,6 @@ public class AdminService {
     }
 
 
-    @Transactional
     public void passSelectedCourse(int id) {
         selectedcourseRepository.passSC(id);
     }
