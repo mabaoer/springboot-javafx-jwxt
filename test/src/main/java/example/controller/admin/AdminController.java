@@ -12,15 +12,19 @@ import example.view.student.StudentView;
 import example.view.teacher.TeacherView;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
+import javafx.stage.Stage;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
+import static de.felixroske.jfxsupport.GUIState.getScene;
 
 @FXMLController
 public class AdminController {
@@ -353,9 +357,10 @@ public class AdminController {
 
     }
 
-
     @FXML
     public void logout(){
+        Stage stage=(Stage) getScene().getWindow();
+        stage.close();
 
     }
 

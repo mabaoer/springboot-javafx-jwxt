@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="0513 袁泽" />
+    <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="0513 袁泽">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/controller/admin/AdminController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,8 +82,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -119,6 +127,13 @@
       <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\View" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="RunManager" selected="Spring Boot.Main (1)">
     <configuration name="Main (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="test" />
@@ -134,60 +149,10 @@
       </method>
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="part-5" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.View.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="part-7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="part-6-2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.view.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=/usr/local/java/lib:/usr/local/hadoop/lib " />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -245,6 +210,22 @@
       </method>
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
+      <option name="VM_PARAMETERS" value="-Djava.library.path=/usr/local/java/lib:/usr/local/hadoop/lib " />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Users\Rabbit\.jdks\corretto-1.8.0_252-1\jre" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="part-8" />
       <extension name="coverage">
         <pattern>
@@ -257,9 +238,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="part-7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="part-6-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="example.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Main (1)" />
+        <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -276,6 +310,9 @@
       <workItem from="1589008011087" duration="20135000" />
       <workItem from="1589083014078" duration="5426000" />
       <workItem from="1589175019043" duration="8512000" />
+      <workItem from="1589715205033" duration="3467000" />
+      <workItem from="1589722962791" duration="1187000" />
+      <workItem from="1589787030185" duration="1613000" />
     </task>
     <task id="LOCAL-00001" summary="delete other  modules">
       <created>1589698724252</created>
@@ -302,7 +339,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -327,61 +364,73 @@
     <option name="LAST_COMMIT_MESSAGE" value="增加 推荐界面 修复 方框字体" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1589452875444">
+    <state x="533" y="0" key="#Auto_Import" timestamp="1589788515659">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1589452875444" />
-    <state width="1493" height="531" key="GridCell.Tab.0.bottom" timestamp="1589702275077">
+    <state x="533" y="0" key="#Auto_Import/0.0.1536.864@0.0.1536.864" timestamp="1589788515659" />
+    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589715818114">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="531" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589702275077" />
-    <state width="1493" height="531" key="GridCell.Tab.0.center" timestamp="1589702275077">
+    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1589715818114" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1589724379999">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="531" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589702275077" />
-    <state width="1493" height="531" key="GridCell.Tab.0.left" timestamp="1589702275077">
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1589724379999" />
+    <state width="1282" height="185" key="GridCell.Tab.0.bottom" timestamp="1589788651499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="531" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589702275077" />
-    <state width="1493" height="531" key="GridCell.Tab.0.right" timestamp="1589702275077">
+    <state width="1282" height="185" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589788651499" />
+    <state width="1282" height="185" key="GridCell.Tab.0.center" timestamp="1589788651499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="531" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589702275077" />
-    <state width="1493" height="531" key="GridCell.Tab.1.bottom" timestamp="1589702275077">
+    <state width="1282" height="185" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589788651499" />
+    <state width="1282" height="185" key="GridCell.Tab.0.left" timestamp="1589788651499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="531" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589702275077" />
-    <state width="1493" height="531" key="GridCell.Tab.1.center" timestamp="1589702275077">
+    <state width="1282" height="185" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589788651499" />
+    <state width="1282" height="185" key="GridCell.Tab.0.right" timestamp="1589788651499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="531" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1589702275077" />
-    <state width="1493" height="531" key="GridCell.Tab.1.left" timestamp="1589702275077">
+    <state width="1282" height="185" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589788651499" />
+    <state width="1282" height="185" key="GridCell.Tab.1.bottom" timestamp="1589788651499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="531" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1589702275077" />
-    <state width="1493" height="531" key="GridCell.Tab.1.right" timestamp="1589702275077">
+    <state width="1282" height="185" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589788651499" />
+    <state width="1282" height="185" key="GridCell.Tab.1.center" timestamp="1589788651499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="531" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1589702275077" />
-    <state width="746" height="279" key="GridCell.Tab.2.bottom" timestamp="1589702260045">
+    <state width="1282" height="185" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1589788651499" />
+    <state width="1282" height="185" key="GridCell.Tab.1.left" timestamp="1589788651499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="279" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589702260045" />
-    <state width="746" height="279" key="GridCell.Tab.2.center" timestamp="1589702260045">
+    <state width="1282" height="185" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1589788651499" />
+    <state width="1282" height="185" key="GridCell.Tab.1.right" timestamp="1589788651499">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="279" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1589702260045" />
-    <state width="746" height="279" key="GridCell.Tab.2.left" timestamp="1589702260044">
+    <state width="1282" height="185" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1589788651499" />
+    <state width="746" height="279" key="GridCell.Tab.2.bottom" timestamp="1589703993628">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="279" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1589702260044" />
-    <state width="746" height="279" key="GridCell.Tab.2.right" timestamp="1589702260045">
+    <state width="746" height="279" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589703993628" />
+    <state width="746" height="279" key="GridCell.Tab.2.center" timestamp="1589703993627">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="279" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1589702260045" />
-    <state x="299" y="87" key="Maven.ArtifactSearchDialog" timestamp="1589453473861">
+    <state width="746" height="279" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1589703993627" />
+    <state width="746" height="279" key="GridCell.Tab.2.left" timestamp="1589703993627">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="299" y="87" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1589453473861" />
+    <state width="746" height="279" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1589703993627" />
+    <state width="746" height="279" key="GridCell.Tab.2.right" timestamp="1589703993627">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="746" height="279" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1589703993627" />
+    <state x="299" y="87" key="Maven.ArtifactSearchDialog" timestamp="1589717052354">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="299" y="87" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1589717052354" />
+    <state x="249" y="7" key="SettingsEditor" timestamp="1589724389085">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1589724389085" />
   </component>
 </project>
