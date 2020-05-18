@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="0513 袁泽">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/controller/admin/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,13 +104,15 @@
     <property name="settings.editor.selected.configurable" value="com.sjhy.plugin.ui.TemplateSettingPanel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\example\mbw" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\example" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="example" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\final\test\src\main\java\example\entity" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\view" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\mybatis" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\mybatis\mapper" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\View" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="example.service.impl" />
@@ -120,12 +121,10 @@
       <recent name="example.entity" />
       <recent name="example.View" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Code\final\test\src\main\java\example\entity" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\view" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\mybatis" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\mybatis\mapper" />
-      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\java\example\View" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\example\mbw" />
+      <recent name="E:\dangjian\spring-javafx-examples-master\test\src\main\resources\example" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -313,7 +312,7 @@
       <workItem from="1589175019043" duration="8512000" />
       <workItem from="1589715205033" duration="3467000" />
       <workItem from="1589722962791" duration="1187000" />
-      <workItem from="1589787030185" duration="3439000" />
+      <workItem from="1589787030185" duration="4008000" />
     </task>
     <task id="LOCAL-00001" summary="delete other  modules">
       <created>1589698724252</created>
@@ -373,42 +372,46 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1589715818114" />
+    <state x="560" y="345" width="448" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589790947892">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="560" y="345" width="448" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1589790947892" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1589724379999">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1589724379999" />
-    <state width="1282" height="546" key="GridCell.Tab.0.bottom" timestamp="1589789864731">
+    <state width="1282" height="510" key="GridCell.Tab.0.bottom" timestamp="1589790987195">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1282" height="546" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589789864731" />
-    <state width="1282" height="546" key="GridCell.Tab.0.center" timestamp="1589789864731">
+    <state width="1282" height="510" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589790987195" />
+    <state width="1282" height="510" key="GridCell.Tab.0.center" timestamp="1589790987194">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1282" height="546" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589789864731" />
-    <state width="1282" height="546" key="GridCell.Tab.0.left" timestamp="1589789864731">
+    <state width="1282" height="510" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589790987194" />
+    <state width="1282" height="510" key="GridCell.Tab.0.left" timestamp="1589790987194">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1282" height="546" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589789864731" />
-    <state width="1282" height="546" key="GridCell.Tab.0.right" timestamp="1589789864731">
+    <state width="1282" height="510" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589790987194" />
+    <state width="1282" height="510" key="GridCell.Tab.0.right" timestamp="1589790987194">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1282" height="546" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589789864731" />
-    <state width="1282" height="546" key="GridCell.Tab.1.bottom" timestamp="1589789864731">
+    <state width="1282" height="510" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589790987194" />
+    <state width="1282" height="510" key="GridCell.Tab.1.bottom" timestamp="1589790987195">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1282" height="546" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589789864731" />
-    <state width="1282" height="546" key="GridCell.Tab.1.center" timestamp="1589789864731">
+    <state width="1282" height="510" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589790987195" />
+    <state width="1282" height="510" key="GridCell.Tab.1.center" timestamp="1589790987195">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1282" height="546" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1589789864731" />
-    <state width="1282" height="546" key="GridCell.Tab.1.left" timestamp="1589789864731">
+    <state width="1282" height="510" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1589790987195" />
+    <state width="1282" height="510" key="GridCell.Tab.1.left" timestamp="1589790987195">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1282" height="546" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1589789864731" />
-    <state width="1282" height="546" key="GridCell.Tab.1.right" timestamp="1589789864731">
+    <state width="1282" height="510" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1589790987195" />
+    <state width="1282" height="510" key="GridCell.Tab.1.right" timestamp="1589790987195">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1282" height="546" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1589789864731" />
+    <state width="1282" height="510" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1589790987195" />
     <state width="1282" height="546" key="GridCell.Tab.2.bottom" timestamp="1589789864537">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
