@@ -361,8 +361,6 @@ public class AdminController {
     public void logout(){
         Stage stage=(Stage) getScene().getWindow();
         stage.close();
-
     }
-
 }
 
