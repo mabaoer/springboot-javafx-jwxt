@@ -29,11 +29,13 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
 
     Course findByCourseId(int i);
 
+    @Transactional
     @Modifying(clearAutomatically = true)
     @Query("update Course a set a.permission = 1 where a.courseId =:id")
     public void pass(@Param("id")int id);
 
 
+    @Transactional
     @Modifying(clearAutomatically = true)
     @Query("update Course a set a.permission = -1 where a.courseId =:id")
     public void reject(@Param("id")int id);
