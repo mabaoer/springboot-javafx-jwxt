@@ -298,6 +298,7 @@ public class AdminController {
             }
 
             for (int i = data.size()-1; i>=0; i--) {
+                list.get(data.get(i)).setPermission("审核通过");
                 list2.add(list.get(data.get(i)));
                 int id = list.get(data.get(i)).getCourseID();
                 adminService.passCourse(id);

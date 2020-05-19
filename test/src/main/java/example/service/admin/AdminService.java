@@ -74,8 +74,7 @@ public class AdminService {
          */
 
         List<Course> returnCourse = new LinkedList<>();
-        // test.getCollegeId();
-        // test.getStudentId();
+
 
         int collegeId = student.getCollegeId();        //学生所在专业测试用例
         int studentId = student.getStudentId();
@@ -101,18 +100,21 @@ public class AdminService {
             int curScore = 0;
             int tId = traningpros.get(i).getTraningproId();
             String s = traningpros.get(i).getType();
-
             for (int j = 0; j < selectedcourses.size(); j++) {
 
                 int cId = selectedcourses.
                         get(j).getCourseId();
                 Course temp = map.get(cId);
+
+                if(temp==null)
+                {
+                    continue;
+                }
                 if (temp.getTrainProId() == tId) {
                     curScore += temp.getCredit();
                     map.remove(cId);
                 }
                 if (curScore >= needScore) {
-
                     System.out.println("你已经修完了" + s);
                     flag = 1;
                 }
