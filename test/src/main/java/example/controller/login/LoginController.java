@@ -98,13 +98,10 @@ public class LoginController  {
         NUM=listUser.size();
         for (int i=0;i<NUM;i++) {
             user = listUser.get(i);
-
-            System.out.println(user.getUserName());
-            System.out.println("111111111");
-            System.out.println(userfield.getText());
             if (userfield.getText().equals(user.getUserName())) {
                 if (passwordfield.getText().equals(user.getPassword())) {
-                     user.getRole();
+                     return  user.getRole();
+
                 }
             }
         }
