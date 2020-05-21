@@ -75,7 +75,7 @@ public class StudentService {
                 selectedcourseRepository.save(selectedcourse);
                 return "退课成功";
             }else {
-                if(selectedcourse.getMark()==-1){
+                if(selectedcourse.getMark()!=-1){
                     return "已有成绩，不能退课";
                 }else {
                     selectedcourse.setPermission(0);
