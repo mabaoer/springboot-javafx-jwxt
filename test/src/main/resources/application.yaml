@@ -1,7 +1,7 @@
 javafx:
     stage:
         resizable: false
-    title: MyCoolApp
+    title: 综合教务系统
 
     dbcp2:
         validation-query: SELECT 1

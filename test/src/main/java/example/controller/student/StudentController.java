@@ -10,11 +10,11 @@ import example.entity.Student;
 import example.service.admin.AdminService;
 import example.service.student.StudentService;
 import example.view.login.LoginView;
-import example.view.student.MessageView;
 import javafx.beans.value.ObservableValue;
 import javafx.concurrent.Worker;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Modality;
@@ -39,8 +39,6 @@ public class StudentController implements Initializable {
     StudentService studentService;
     @Autowired
     StudentRepository studentRepository;
-    @Autowired
-    MessageController messageController;
     @Autowired
     LoginController loginController;
     @Autowired
@@ -70,7 +68,9 @@ public class StudentController implements Initializable {
         //stage.setAlwaysOnTop(true);
         webview.setPrefHeight(height);
         webview.setPrefWidth(width);
-        Main.showView(MessageView.class, Modality.NONE);
+        Alert alert  = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText("Welcom to student system");
+        alert.showAndWait();
     }
 
     js apps = new js();
@@ -91,14 +91,12 @@ public class StudentController implements Initializable {
             System.out.println(json);
             return json;
         }
-
         public String courseList1(){
             List<Course> courses=adminService.recommendCourse(student);
             String json=JSON.toJSONString(courses);
             System.out.println(json);
             return json;
         }
-
         public String selectedcourseList(){
             List<Course> courses=studentService.findAllSelectedcourseByStudent(student);
             String json=JSON.toJSONString(courses);
@@ -108,28 +106,28 @@ public class StudentController implements Initializable {
         public String selectCourse(Integer courseid){
             String message=studentService.selectCourseByCourseIdAndStudentId(courseid,student.getStudentId());
             System.out.println(message);
-            messageController.test(message);
-            Main.showView(MessageView.class, Modality.NONE);
+            Alert alert  = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText(message);
+            alert.showAndWait();
             return message;
         }
         public String deleteCourse(Integer courseid){
             return deleteSelectedcourse(studentService.findSelectedcourseByStudentidAndcourseid(student.getStudentId(),courseid));
         }
-
         public String deleteSelectedcourse(Integer selectedcourseid){
             String message=studentService.deleteSelectedourseBySelectedCourseid(selectedcourseid);
-            System.out.println(message);
-            messageController.test(message);
-            Main.showView(MessageView.class, Modality.NONE);
+            Alert alert  = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText(message);
+            alert.showAndWait();
             return message;
         }
-
         public void loginout(){
             System.out.println("推出 程序");
             Stage stage=(Stage) webview.getScene().getWindow();
             stage.close();
-            messageController.test("exit student system");
-            Main.showView(MessageView.class, Modality.NONE);
+            Alert alert  = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("exit student system");
+            alert.showAndWait();
             Main.showView(LoginView.class, Modality.NONE);
         }
     }

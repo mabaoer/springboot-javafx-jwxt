@@ -26,11 +26,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="页面reload">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a509d8f2-eba0-4067-9533-ccf3d31cb9ff.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a509d8f2-eba0-4067-9533-ccf3d31cb9ff.xml" afterDir="false" />
+    <list default="true" id="af237227-ddc4-4b4a-8eed-bbab6ff1bb5f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/student/MessageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/controller/student/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/controller/student/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/main/java/example/service/login/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/service/login/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/service/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/java/example/service/student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/java/example/view/student/MessageView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/main/resources/student/fxml/message.fxml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +67,20 @@
         <item name="MySQL - @mabowen.online" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="jwxt: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @mabowen.online" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jwxt: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="course: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - @mabowen.online" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="jwxt: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="selectedcourse: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -310,6 +327,20 @@
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
               <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@7ef2d41d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5893bc4b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5893bc4b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@52248b37" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@5893bc4b" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@752a97cd" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
           </expand>
           <select />
         </treeState>
@@ -334,7 +365,7 @@
       <workItem from="1589787030185" duration="6219000" />
       <workItem from="1589798477526" duration="928000" />
       <workItem from="1589874313118" duration="6374000" />
-      <workItem from="1590022036987" duration="2611000" />
+      <workItem from="1590022036987" duration="10812000" />
     </task>
     <task id="LOCAL-00001" summary="delete other  modules">
       <created>1589698724252</created>
@@ -364,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590022003634</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="页面reload">
+      <created>1590060073997</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590060073997</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

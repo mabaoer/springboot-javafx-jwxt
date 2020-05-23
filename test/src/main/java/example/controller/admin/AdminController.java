@@ -7,7 +7,6 @@ import example.dao.StudentRepository;
 import example.dao.TeacherRepository;
 import example.entity.*;
 import example.service.admin.AdminService;
-import example.view.student.MessageView;
 import example.view.student.StudentView;
 import example.view.teacher.TeacherView;
 import javafx.collections.FXCollections;
